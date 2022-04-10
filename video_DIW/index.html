@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body onload="">
+    <section>
+      <div class="fila1">
+        <video id="myVideo" width="500" height="500">
+          <source src="../video_RKPIDwHy.mp4" type="video/mp4" />
+        </video>
+        <div>
+          <button>
+            <img
+              class="play"
+              onclick="playVid()"
+              src="./img/play.webp"
+              style="height: 20px"
+            />
+          </button>
+          <button>
+            <img
+              src="./img/pause.webp"
+              onclick="pauseVid()"
+              style="height: 20px"
+            />
+          </button>
+          <button>
+            <img
+              class="add"
+              onclick="skip(10)"
+              src="./img/add.png"
+              style="height: 20px"
+            />
+          </button>
+          <button>
+            <img
+              class="less"
+              onclick="skip(-10)"
+              src="./img/less.png"
+              style="height: 20px"
+            />
+          </button>
+        </div>
+      </div>
+      <div class="fila3">
+        <div class="izquierda"></div>
+      </div>
+    </section>
+    <script src="./video.js"></script>
+  </body>
+</html>
