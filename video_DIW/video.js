@@ -1,12 +1,25 @@
 var vid = document.getElementById("myVideo");
 
+function playVid2() {
+    vid.play();
+}
+
+function pause() {
+    vid.pause();
+}
+
 function playVid() {
-  vid.play();
+    vid.currentTime = 0;
 }
 
 function pauseVid() {
-  vid.pause();
+    vid.currentTime = 17;
 }
-function skip(value) {
-  vid.currentTime += value;
+
+function skip() {
+    vid.currentTime = 27;
+}
+
+function rerun() {
+    vid.currentTime = 0;
 }

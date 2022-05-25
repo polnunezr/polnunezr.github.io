@@ -1,56 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+<head>
+    <meta charset="utf-8" />
+
     <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body onload="">
-    <section>
-      <div class="fila1">
-        <video id="myVideo" width="500" height="500">
-          <source src="../video_RKPIDwHy.mp4" type="video/mp4" />
-        </video>
-        <div>
-          <button>
-            <img
-              class="play"
-              onclick="playVid()"
-              src="./img/play.webp"
-              style="height: 20px"
-            />
-          </button>
-          <button>
-            <img
-              src="./img/pause.webp"
-              onclick="pauseVid()"
-              style="height: 20px"
-            />
-          </button>
-          <button>
-            <img
-              class="add"
-              onclick="skip(10)"
-              src="./img/add.png"
-              style="height: 20px"
-            />
-          </button>
-          <button>
-            <img
-              class="less"
-              onclick="skip(-10)"
-              src="./img/less.png"
-              style="height: 20px"
-            />
-          </button>
+
+
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+        <div class="fila1">
+            <video id="myVideo" width="500" height="500">
+                    <source src="./src/assets/video.mp4">                </video>
+            <div>
+                <button class="about" onclick="playVid2()">
+Start                </button>
+                <button class="about" onclick="pause()">
+Stop  </button>
+                <button class="about" onclick="playVid()">
+                    About me 
+                  </button>
+                <button onclick="pauseVid()" style="height: 20px">
+                      Hard Skill
+                  
+                  </button>
+                <button class="add" onclick="skip()" style="height: 20px">
+                    Soft Skills
+                  </button>
+                <button class="less" onclick="rerun()">
+                     Rerun
+                  </button>
+            </div>
         </div>
-      </div>
-      <div class="fila3">
-        <div class="izquierda"></div>
-      </div>
-    </section>
-    <script src="./video.js"></script>
-  </body>
+        <script src="./video.js"></script>
+
+</body>
+
 </html>
